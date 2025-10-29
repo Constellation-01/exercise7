@@ -6,17 +6,30 @@
   <meta charset="utf-8">
   <!--This receipe is taken from https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry -->
 <style>
+  
+  .full-grid {
+    color: darkbrown;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+  }
+  
+  
   h1 {
     font-size: 38px;
+    color: darkslateblue;
   }
 </style>  
 </head>
 
 <body>
+<div class="full-grid">
+  
 <h1>Spinach, Tofu and Sesame Stir-Fry</h1> 
 <h3>By: Martha Rose Shulman</h3>
 <h3>Yield: 3 Servings</h3>
 
+<div class="ingredient-container">
 <h2>Ingredients</h2>
   <ul>
   <li>1 tablespoon canola oil</li>
@@ -29,7 +42,8 @@
   <li>2 tablespoons toasted sesame seeds</li>
   <li>1 teaspoon sesame oil</li>
   </ul>
-
+ </div>
+  
 <img src="spinach-stir-fry.jpg" alt="Spinach, tofu and sesame stir-fry in a dish.">
 
 <h2>Preparation</h2>
@@ -42,6 +56,6 @@
 
 <h3>Tip</h3>
 <p>Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.</p>
-  
+</div> <!-- The end of the grid -->
 </body>
 </html>

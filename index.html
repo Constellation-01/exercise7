@@ -5,13 +5,42 @@
   <title>Exercise 7: Typography</title>
   <meta charset="utf-8">
   <!--This receipe is taken from https://cooking.nytimes.com/recipes/1012494-spinach-tofu-and-sesame-stir-fry -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap" rel="stylesheet"> 
+  <!-- above link for typeface Castoro -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+  <!-- above link for typeface Shippori Mincho -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Castoro:ital@0;1&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+  <!-- above link for typeface Bodoni Moda -->
 <style>
+  
+  .castoro-regular {
+  font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+ 
+  .shippori-mincho-b1-regular {
+  font-family: "Shippori Mincho B1", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .bodoni-moda-<uniquifier> {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  }
   
   body {
     max-width: 1200px;
     margin: 60px;
-    background-color: almond;
-    color: darkred;
+    background-color: #f7f3ed;
+    color: #5B2C00;
+    font-family: "Castoro", "Times New Roman", serif;
   }
   
   img {
@@ -19,22 +48,58 @@
   }
   
   .full-grid {
+    /* background-color: red; */
     display: grid;
-    grid-template-columns: 35% 65%;
-    gap: 30px;
+    grid-template-columns: 35% 63%;
+    gap: 2%;
   }
   
   h1 {
-    font-size: 38px;
-    color: darkred;
+    /* background-color: purple; */
+    color: #3a441a;
+    font-family: "Bodoni Moda", "Noto Serif", "Times New Roman", serif;
+    font-weight: bold;
+    font-style: none;
+    text-transform: none;
+    font-size: 75px;
   }
   
   h2 {
-    color: navy;
+    /* background-color: green; */
+    color: #4d4f1a;
+    font-family: "Shippori Mincho B1", "Times New Roman", serif;
+    text-transform: capitalize;
+  }
+  
+  h3.credits {
+    /* background-color: blue; */
+    color: #5B2C00;
+    font-family: "Bodoni Moda", "Shippori Mincho B1", "Times New Roman", serif;
+    font-style: none;
+    text-transform: capitalize;
+    font-size: 20px;
   }
   
   h3 {
-    color: darkolivegreen;
+    /* background-color: yellow; */
+    color: #932626;
+    font-family: "Shippori Mincho B1", "Times New Roman", serif;
+  }
+  
+  h3.tip {
+    font-family: "Shippori Mincho B1", "Times New Roman", serif;
+    font-variant: small-caps;
+    font-size: 26px;
+  }
+  
+   h3.yield {
+    color: #932626;
+    font-family: "Shippori Mincho B1", "Times New Roman", serif;
+    text-transform: uppercase;
+  }
+  
+  .top-left-container, .bottom-left-container {
+    /* background-color: tan; */
   }
   
 </style>  
@@ -45,8 +110,8 @@
   
 <div class="top-left-container">
   <h1>Spinach, Tofu and Sesame Stir-Fry</h1> 
-  <h3>By: Martha Rose Shulman</h3>
-  <h3>Yield: 3 Servings</h3>
+  <h3 class="credits">By: Martha Rose Shulman</h3>
+  <h3 class="yield">Yield: 3 Servings</h3>
 </div>  
   
 <div class="top-right-container">
@@ -74,7 +139,7 @@
   <p>Heat the canola oil over medium-high heat in a large nonstick skillet or wok, and add the tofu. Stir-fry until the tofu is lightly colored, three to five minutes, and add the garlic, ginger and chili flakes. Cook, stirring, until fragrant, about one minute, and add soy sauce to taste. Add the spinach and stir-fry until the spinach wilts, about one minute. Stir in the sesame seeds, and add more soy sauce to taste. Remove from the heat.</p>
   <h3>Step 2</h3>
   <p>Using tongs, transfer the spinach and tofu mixture to a serving bowl, leaving the liquid behind in the pan or wok. Drizzle with the sesame oil, and add more soy sauce as desired. Serve with rice or other grains, or noodles. You may also use it as a filling for whole wheat pita bread.</p>
-  <h3>Tip</h3>
+  <h3 class="tip">tip</h3>
   <p>Advance preparation: This is a last-minute preparation, but you can have your ingredients prepared well in advance.</p>
 </div>
 
